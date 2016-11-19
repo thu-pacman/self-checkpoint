@@ -11,5 +11,7 @@ It is based on HPL benchmark (version 2.2). Modification can be found in
 * src/grid/HPL\_grid\_init.c
 * testing/ptest/HPL\_pdtest.c
 
-## Step-by-step tutorial
-Scripts are provided in SKT-HPL/bin. A README.txt is also provided there.
+## Install and Run
+The installation of SKT-HPL is the same with original HPL.
+Running scripts are provided in skt-hpl/bin/scripts. 
+A step-by-step tutorial in PDF format is provided. There is also a README.txt in skt-hpl/bin/scripts, but not so deatiled.
