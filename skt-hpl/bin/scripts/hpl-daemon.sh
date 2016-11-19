@@ -38,7 +38,7 @@ if [ $xcnt -le 1 ]; then
 # RECOVER: For debugging purpose. If set to 0, checkpoint will not be read after restart.
 # RUN_TIME_LIMIT: For debugging purpose. A complete SKT-HPL could last for hours, but it will exit after RUN_TIME_LIMIT seconds. 
 
-   RPN=16 TSIZE=8 SNAPSHOT=30 REUSEMAT=$REUSE_MAT_N ONLY=0 RECOVER=1 RUN_TIME_LIMIT=3000 srun -p work -n 128 --nodelist=./worklist --ntasks-per-node=16 ../skt/xhpl
+   RPN=16 TSIZE=8 SNAPSHOT=30 REUSEMAT=$REUSE_MAT_N ONLY=0 RECOVER=1 RUN_TIME_LIMIT=100000 srun -p work -n 128 --nodelist=./worklist --ntasks-per-node=16 ../skt/xhpl
 
 # if a fail run return 0, we need to repeat the running for several times.
    if [ $? -eq 0 ]; then
